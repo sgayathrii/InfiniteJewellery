@@ -8,7 +8,8 @@ export type CategoryDocument = Document & {
 const CategorySchema = new mongoose.Schema({
   categoryName: {
     type: String,
-    required: true    
+    required: true,
+    unique: true   
   },
   imageUrl: {
     type: String,    
