@@ -1,0 +1,268 @@
+.App {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar-logo-img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.login { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 80px;
+}
+
+/* Carousel */
+.carousel-images {
+  position: relative;
+  border-radius: 10px;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+}
+.carousel-images img {
+  width: 50%;
+  height: 99%;
+  border-radius: 8px;  
+}
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 15px;
+  width: 15px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.carousel-indicator {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  background-color: #333;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #fa2020;
+}
+
+/* Horizontal line */
+.line {
+  border-bottom: 1px solid #ccc;
+  text-align:center;
+  height:17px;
+  margin :17px;
+  padding: 10px;
+  
+}
+
+.lineImg {
+  background-color:white;
+  padding:0px 5px 0px 5px;
+}
+
+/* productdialogdetail */
+.product-card {
+  width: 90%;
+  position: relative;  
+}
+
+.quick-shop-button {
+  position: absolute;
+  bottom: 80px; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;  
+}
+
+.product-card:hover .quick-shop-button {
+  opacity: 1;
+}
+
+.quick-shop-button button {
+  font-size: 10px; 
+  padding: 2px 10px;
+  background-color: #0edbaf;
+  margin-bottom: 10px;
+}
+
+.productDetail_Image {
+  max-width: '500px';
+}
+
+div.custom-image-gallery-wrapper {
+  width: 400px;
+}
+
+div.custom-image-gallery-wrapper .image-gallery-left-nav,
+div.custom-image-gallery-wrapper .image-gallery-right-nav
+{
+  color: #0edbaf;    
+}
+
+/* CartSidebar */
+
+
+.cart-sidebar-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  /* transform: translateY(-50%); */
+  z-index: 1301; /* Higher value than the Dialog zIndex */
+}
+
+/* Shipping page */
+
+.shipping-page-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.shipping-form-container {
+  flex: 1;
+  border-right: 1px solid #ccc; 
+  padding-right: 10px;
+}
+
+.current-order-container {
+  flex: 1;
+}
+
+/* Home -random images */
+.offer-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+  width: 100%;  
+}
+
+.offer-image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px; 
+}
+
+.offer-image-container h1 {
+  color: #f72585;
+  margin-top: 2px;
+  margin-bottom: -3px;  
+}
+
+.offer-image-container p {
+  color: #8900f2;
+  margin-top: -2px;
+  margin-bottom: 20px;
+  font-size: 14px; 
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-content {
+  display: flex;
+  align-items: center;  
+}
+
+.product-content img {
+  max-width: 100%; 
+  height: auto; 
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 40%;
+  } 
+  cursor: pointer;  
+}
+
+
+
+/* Footer */
+
+.footer-container {
+  background-color: #16a085; 
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3px;
+  }
+
+.footer-section {
+  flex-basis: calc(33.33% - 25px);
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #3c40c6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #d4d4d4;
+}
+
+
