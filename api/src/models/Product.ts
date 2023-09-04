@@ -31,8 +31,7 @@ export const ProductSchema = new mongoose.Schema({
         unique: true        
     },
     category: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "category",
+        type: String,  
         required: true,
     },
     subCategory: {

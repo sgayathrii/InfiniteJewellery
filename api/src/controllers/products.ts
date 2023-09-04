@@ -42,7 +42,7 @@ export const createProduct = async (
     });
 
     try {
-        const product = await createProductService(productInformation);
+        const product = await createProductService(productInformation);        
         response.status(201).json(product);
     } catch (error) {
         next(error);
